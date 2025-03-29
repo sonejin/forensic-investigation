@@ -1,14 +1,18 @@
-Forensic Investigation of Malicious Web Shell Attack on Company Web Server
-Overview
+**Forensic Investigation of Malicious Web Shell Attack on Company Web Server**
+
+
+**Overview**
+
 In this repository, we document the forensic analysis of a suspicious activity detected on a company web server. The attack involved the unauthorized upload of a malicious web shell, followed by command execution and an attempt to exfiltrate sensitive data. This lab walks through the process of analyzing a PCAP file captured during the incident, using Wireshark to identify key aspects of the attack.
 
-Lab Objective
+**Lab Objective**
 The goal of this lab is to perform a forensic analysis of a security incident involving a web shell and to understand the methodologies used by the attacker to gain unauthorized access to the server. The analysis includes identifying the geographical origin of the attack, determining the malicious web shell’s name, uncovering the communication channels used by the attacker, and identifying sensitive files targeted for exfiltration.
 
-Table of Contents
+**Table of Contents**
+
 Analysis Overview
 
-Step-by-Step Analysis
+**Step-by-Step Analysis**
 
 Q1: Identifying the Geographical Origin
 
@@ -22,16 +26,16 @@ Q5: Port Used for Outbound Communication
 
 Q6: Identifying the Exfiltrated File
 
-Tools Used
+**Tools Used**
 
-Conclusion
+**Conclusion**
 
-Further Reading
+**Further Reading**
 
-Analysis Overview
+**Analysis Overview**
 In this lab, the captured PCAP file is analyzed using Wireshark to trace the steps of the attack, including identifying the attacker’s origin, the methods used to exploit vulnerabilities, and the attacker’s actions within the compromised server. By following the steps in this lab, we gain valuable insights into web application vulnerabilities and the forensic techniques used to identify and mitigate similar attacks.
 
-Step-by-Step Analysis
+**Step-by-Step Analysis**
 Q1: Identifying the Geographical Origin
 Objective: To determine the geographical location of the attacker's IP address.
 
@@ -94,17 +98,17 @@ Look for commands attempting to access or send sensitive files.
 
 Result: The attacker attempted to exfiltrate the /etc/passwd file, a critical file for system reconnaissance.
 
-Tools Used
+**Tools Used**
 Wireshark: A network protocol analyzer used to examine and analyze the captured traffic (PCAP file).
 
 IP Geolocation: For identifying the geographical origin of the attack.
 
 PHP/Netcat: To analyze the malicious web shell code.
 
-Conclusion
+**Conclusion**
 This analysis highlights key forensic techniques used to trace an attacker’s actions within a compromised web server. By identifying the geographical origin, attack vectors, and specific files targeted for exfiltration, we can build a more robust defense strategy. Understanding these steps helps strengthen incident response efforts and mitigates future risks associated with similar attacks.
 
-Further Reading
+**Further Reading**
 Wireshark Documentation
 
 PCAP Analysis Tutorials
